@@ -1,0 +1,23 @@
+{
+  "name": "vue-node",
+  "version": "0.0.1",
+  "description": "A test with Vue.js and Node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:paulohp/node-vue.git"
+  },
+  "keywords": [
+    "vue",
+    "node"
+  ],
+  "author": "Paulo Pires",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulohp/node-vue/issues"
+  },
+  "homepage": "https://github.com/paulohp/node-vue"
+}
