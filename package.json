@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/paulohp/node-vue/issues"
   },
-  "homepage": "https://github.com/paulohp/node-vue"
+  "homepage": "https://github.com/paulohp/node-vue",
+  "dependencies": {
+    "restify": "^2.7.0"
+  }
 }
