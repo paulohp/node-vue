@@ -1,4 +1,4 @@
-var apiUrl = 'https://localhost:8080/api/';
+var apiUrl = 'https://localhost:3000/api/';
 
 var demo = new Vue({
 

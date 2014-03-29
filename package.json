@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/paulohp/node-vue",
   "dependencies": {
-    "restify": "^2.7.0"
+    "express": "~4.0.0",
+    "morgan": "~1.0.0",
+    "body-parser": "~1.0.0",
+    "method-override": "~1.0.0"
   }
 }

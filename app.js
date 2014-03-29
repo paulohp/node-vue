@@ -1,18 +1,14 @@
-var restify = require('restify');
+// server.js (Express 4.0)
+var express        = require('express');
+var morgan         = require('morgan');
+var bodyParser     = require('body-parser');
+var methodOverride = require('method-override');
+var app            = express();
 
-var server = restify.createServer({
-  name: 'vue-node',
-  version: '0.0.1'
-});
-server.use(restify.acceptParser(server.acceptable));
-server.use(restify.queryParser());
-server.use(restify.bodyParser());
+app.use(express.static(__dirname + '/public'));   // set the static files location /public/img will be /img for users
+app.use(morgan('dev'));                           // log every request to the console
+app.use(bodyParser());                            // pull information from html in POST
+app.use(methodOverride());                        // simulate DELETE and PUT
 
-server.get('/echo/:name', function (req, res, next) {
-  res.send(req.params);
-  return next();
-});
-
-server.listen(8080, function () {
-  console.log('%s listening at %s', server.name, server.url);
-});
+app.listen(3000);
+console.log('Magic happens on port ' + 3000);     // shoutout to the user
