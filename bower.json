@@ -1,0 +1,22 @@
+{
+  "name": "vue-node",
+  "version": "0.0.1",
+  "homepage": "https://github.com/paulohp/node-vue",
+  "authors": [
+    "Paulo Pires <taralloqueiroiz@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vue": "~0.10.3"
+  }
+}
