@@ -1,15 +1,15 @@
-var apiUrl = 'https://localhost:3000/api/';
+var apiUrl = 'http://localhost:3000/';
 
-var demo = new Vue({
+var vm = new Vue({
 
     el: '#demo',
 
     data: {
-        branch: 'master'
+        animal: 'dogs'
     },
 
     created: function () {
-        this.$watch('branch', function () {
+        this.$watch('animal', function () {
             this.fetchData();
         });
     },
@@ -30,7 +30,8 @@ var demo = new Vue({
                 self = this;
             xhr.open('GET', apiUrl + self.branch);
             xhr.onload = function () {
-                self.commits = JSON.parse(xhr.responseText);
+                console.log(xhr.responseText);
+                //self.commits = JSON.parse(xhr.responseText);
             };
             xhr.send();
         }
